@@ -1,0 +1,24 @@
+{
+  "name": "empty-typescript-project",
+  "version": "1.0.0",
+  "description": "Empty TypeScript project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf ./dist",
+    "build": "npm run clean && tsc",
+    "start": "npm run build && node ./dist/index.js",
+    "watch": "tsc --watch",
+    "dev": "npm run watch & nodemon ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hisacat/empty-typescript-project.git"
+  },
+  "author": "HisaCat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hisacat/empty-typescript-project/issues"
+  },
+  "homepage": "https://github.com/hisacat/empty-typescript-project#readme"
+}
